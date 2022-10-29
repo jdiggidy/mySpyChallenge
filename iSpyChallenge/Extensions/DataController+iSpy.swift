@@ -8,6 +8,7 @@ import Foundation
 
 // A set of convenience functions for navigating the data stored in DataController
 extension DataController {
+    
     func user(identifiedBy userID: String) -> User? {
         allUsers.first { $0.id == userID }
     }

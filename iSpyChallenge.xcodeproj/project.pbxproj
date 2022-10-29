@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3660DDD2290CF0A20043DF66 /* NearMeCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDD1290CF0A20043DF66 /* NearMeCardListView.swift */; };
+		3660DDD5290CF5AC0043DF66 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDD4290CF5AC0043DF66 /* MockUser.swift */; };
+		3660DDD7290CFB4E0043DF66 /* MockChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDD6290CFB4E0043DF66 /* MockChallenge.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -59,6 +62,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3660DDD1290CF0A20043DF66 /* NearMeCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeCardListView.swift; sourceTree = "<group>"; };
+		3660DDD4290CF5AC0043DF66 /* MockUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
+		3660DDD6290CFB4E0043DF66 /* MockChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallenge.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -123,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3660DDD3290CF59E0043DF66 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3660DDD4290CF5AC0043DF66 /* MockUser.swift */,
+				3660DDD6290CFB4E0043DF66 /* MockChallenge.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		3E5D3253277A9674004D1516 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +171,7 @@
 		3E5D326C277A9D43004D1516 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3660DDD3290CF59E0043DF66 /* Mocks */,
 				3E5D326D277A9D56004D1516 /* User.swift */,
 				3E5D326F277A9D63004D1516 /* Challenge.swift */,
 				3E5D3271277A9D6F004D1516 /* Match.swift */,
@@ -246,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				E089E98B263A0C630054543D /* NearMe.storyboard */,
+				3660DDD1290CF0A20043DF66 /* NearMeCardListView.swift */,
 			);
 			path = "Near Me";
 			sourceTree = "<group>";
@@ -356,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E5D326B277A9D2C004D1516 /* DataController.swift in Sources */,
+				3660DDD5290CF5AC0043DF66 /* MockUser.swift in Sources */,
 				3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */,
 				3E5D3270277A9D63004D1516 /* Challenge.swift in Sources */,
 				E0028788263A06EC00C65841 /* AppDelegate.swift in Sources */,
@@ -381,6 +399,8 @@
 				968A15E0264221100017D10B /* MatchTableViewController.swift in Sources */,
 				3E5D3264277A9B6E004D1516 /* User+iSpy.swift in Sources */,
 				3E5D326E277A9D56004D1516 /* User.swift in Sources */,
+				3660DDD7290CFB4E0043DF66 /* MockChallenge.swift in Sources */,
+				3660DDD2290CF0A20043DF66 /* NearMeCardListView.swift in Sources */,
 				968A15DD264219800017D10B /* ChallengeTableViewController.swift in Sources */,
 				3E5D327A277E5450004D1516 /* DataController+iSpy.swift in Sources */,
 				3E5D3262277A9B5E004D1516 /* Challenge+iSpy.swift in Sources */,
@@ -564,6 +584,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,6 +603,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

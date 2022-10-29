@@ -12,20 +12,38 @@ extension NSNotification.Name {
     static let dataControllerDidUpdate = NSNotification.Name(rawValue: "dataControllerDidUpdate")
 }
 
-class DataController {
-    private let apiService: APIService
+class DataController: ObservableObject {
     
-    private(set) var allUsers: [User] = [] {
+    
+    @Published var allUsers: [User] = [] {
         didSet {
             NotificationCenter.default.post(name: .dataControllerDidUpdate, object: self)
         }
     }
+    
+    @Published var challenges: [Challenge] = []
+    
+    private let apiService: APIService
+    
+//    private(set) var allUsers: [User] = [] {
+//        didSet {
+//            NotificationCenter.default.post(name: .dataControllerDidUpdate, object: self)
+//        }
+//    }
     
     // A hack for this project -- assume that the first user is the current user
     private let currentUserIndex = 0
     
     init(apiService: APIService) {
         self.apiService = apiService
+    }
+    
+    func getUsers() {
+        
+    }
+    
+    func getChallenges() {
+        
     }
     
     var currentUser: User? {
