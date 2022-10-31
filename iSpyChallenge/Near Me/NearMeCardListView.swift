@@ -16,6 +16,9 @@ class NearMeHostingViewController: UIHostingController<NearMeCardListView> {
 }
 
 struct NearMeCardListView: View {
+    
+    
+    
     var body: some View {
         List {
             HStack {
@@ -23,10 +26,15 @@ struct NearMeCardListView: View {
                 Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
                 Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
             }
+            .foregroundColor(.secondary)
+            .font(.body)
+            
             Text("Multiline text")
+                .font(.title2)
             
             
         }
+        
     }
 }
 

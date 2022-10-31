@@ -7,16 +7,21 @@
 
 import Foundation
 
-class MockUser: DataController {
+class MockUser: UserObservable {
     
-    let fakeChallenges: [Challenge] = [
-        Challenge(id: "chal0", hint: "it's easy", latitude: 37.7904462, longitude: -122.4011537, photoImageName: "photo_goes_here", creatorID: "234")
-    ]
-    
-    override func getUsers() {
-        allUsers = [
-            User(id: "0", email: "email@email.com", username: "jdiggidy", challenges: fakeChallenges)
+    override func fetchUsers() {
+        userData = [
+            
+        
         ]
     }
+//    override func fetchUsers() {
+//        userData = [
+//            APIUser(id: <#T##String#>,
+//                    email: <#T##String#>,
+//                    username: <#T##String#>,
+//                    picture: <#T##APIUser.Picture#>)
+//        ]
+//    }
 
 }

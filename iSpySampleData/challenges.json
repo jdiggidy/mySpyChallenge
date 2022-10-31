@@ -23,7 +23,7 @@
                 "id": "1",
                 "location": {
                     "latitude": 37.26864,
-                    "longitude": -122.12378
+                    "longitude": [-122.12378]
                 },
                 "photo": "alcatraz-island.jpg",
                 "verified": true,
