@@ -11,8 +11,8 @@
 		3660DDD5290CF5AC0043DF66 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDD4290CF5AC0043DF66 /* MockUser.swift */; };
 		3660DDD7290CFB4E0043DF66 /* MockChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDD6290CFB4E0043DF66 /* MockChallenge.swift */; };
 		3660DDDD290D88220043DF66 /* ChallengeObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DDDC290D88220043DF66 /* ChallengeObservable.swift */; };
-		3660DE15290E23660043DF66 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DE14290E23660043DF66 /* SwiftUIView.swift */; };
 		3660DE17290EE9D20043DF66 /* UserObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DE16290EE9D20043DF66 /* UserObservable.swift */; };
+		3660DE19290F8AB10043DF66 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660DE18290F8AB10043DF66 /* SwiftUIView.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -69,8 +69,8 @@
 		3660DDD4290CF5AC0043DF66 /* MockUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
 		3660DDD6290CFB4E0043DF66 /* MockChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallenge.swift; sourceTree = "<group>"; };
 		3660DDDC290D88220043DF66 /* ChallengeObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeObservable.swift; sourceTree = "<group>"; };
-		3660DE14290E23660043DF66 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		3660DE16290EE9D20043DF66 /* UserObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObservable.swift; sourceTree = "<group>"; };
+		3660DE18290F8AB10043DF66 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 				E089E982263A0BF70054543D /* New Challenge */,
 				E089E983263A0C010054543D /* Near Me */,
 				E089E984263A0C100054543D /* Data Browser */,
-				3660DE14290E23660043DF66 /* SwiftUIView.swift */,
+				3660DE18290F8AB10043DF66 /* SwiftUIView.swift */,
 			);
 			path = iSpyChallenge;
 			sourceTree = "<group>";
@@ -391,7 +391,6 @@
 			files = (
 				3E5D326B277A9D2C004D1516 /* DataController.swift in Sources */,
 				3660DDD5290CF5AC0043DF66 /* MockUser.swift in Sources */,
-				3660DE15290E23660043DF66 /* SwiftUIView.swift in Sources */,
 				3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */,
 				3660DDDD290D88220043DF66 /* ChallengeObservable.swift in Sources */,
 				3E5D3270277A9D63004D1516 /* Challenge.swift in Sources */,
@@ -419,6 +418,7 @@
 				968A15E0264221100017D10B /* MatchTableViewController.swift in Sources */,
 				3E5D3264277A9B6E004D1516 /* User+iSpy.swift in Sources */,
 				3E5D326E277A9D56004D1516 /* User.swift in Sources */,
+				3660DE19290F8AB10043DF66 /* SwiftUIView.swift in Sources */,
 				3660DDD7290CFB4E0043DF66 /* MockChallenge.swift in Sources */,
 				3660DDD2290CF0A20043DF66 /* NearMeCardListView.swift in Sources */,
 				968A15DD264219800017D10B /* ChallengeTableViewController.swift in Sources */,

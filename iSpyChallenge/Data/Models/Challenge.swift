@@ -6,7 +6,7 @@
 
 import Foundation
 
-struct Challenge: Codable, Hashable {
+struct Challenge: Codable, Hashable, Identifiable {
     var id: String
     var hint: String
     var latitude: Double

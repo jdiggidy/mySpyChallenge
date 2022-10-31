@@ -10,10 +10,10 @@ import Foundation
 class MockUser: UserObservable {
     
     override func fetchUsers() {
-        userData = [
-            
-        
-        ]
+//        userData = [
+//            User(apiUser: A, apiChallenges: <#T##[APIChallenge]#>)
+//        
+//        ]
     }
 //    override func fetchUsers() {
 //        userData = [

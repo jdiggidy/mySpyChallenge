@@ -17,29 +17,37 @@ class NearMeHostingViewController: UIHostingController<NearMeCardListView> {
 
 struct NearMeCardListView: View {
     
-    
+    @ObservedObject var observedChallenge = ChallengeObservable()
     
     var body: some View {
-        List {
-            HStack {
-                Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(observedChallenge.challengeData) { challenge in
+                Section {
+                    VStack {
+                        HStack {
+                            Text(challenge.id)
+                        }
+                        .foregroundColor(.secondary)
+                        .font(.body)
+                        Text(challenge.hint)
+                            .foregroundColor(.primary)
+                            .font(.title2)
+                    }
+                }
+                
+                
             }
-            .foregroundColor(.secondary)
-            .font(.body)
-            
-            Text("Multiline text")
-                .font(.title2)
-            
-            
         }
-        
+        .task {
+            observedChallenge.fetchChallenges()
+       }
     }
 }
 
 struct NearMeCardView_Previews: PreviewProvider {
     static var previews: some View {
-        NearMeCardListView()
+        NearMeCardListView(observedChallenge: MockChallenge())
     }
 }
+
+
